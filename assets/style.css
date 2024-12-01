@@ -1,5 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --primaria: #1b222e;
+    --primaria-claro: #2b3244;
+    --secundaria: #9b946f;
+}
+
 *, *::before, *::after {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+    width: 0.7vw;
+}
+*::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: var(--secundaria);
+}
+*::-webkit-scrollbar-track {
+    background: var(--primaria);
+}
+
+body {
+    background-image: url("img/wallpaper.png");
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    background-color: #010101;
+    overflow-x: hidden;
+}
+h1, h2, h3, h4, h5, h6, p, a{
+    font-family: 'Roboto', sans-serif;
+    color: var(--text);
+    text-decoration: none;
+}
+
+
+
+
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 25vh;
+    border-bottom: 0.5vh white solid;
+    background-color: var(--primaria);
+    color: white;
+    z-index: 100;
+}
+header h1 {
+    position: relative;
+    text-align: center;
+    font-size: 3vw;
+    font-weight: 300;
+    letter-spacing: 2vw;
+    word-spacing: 3vw;
+}
+header nav {
+    position: absolute;
+    width: 50vw;
+}
+header nav a {
+    margin: 4vw;
+    font-size: 1vw;
+    font-weight: 100;
+    letter-spacing: 0.1vw;
+    word-spacing: 0.2vw;
+    text-decoration: none;
+}
+
+
+
+
+
+main {
+    width: 100vw;
+    height: 3000px;
+    padding: 5vw;
+    margin: 25vh 0;
+}
+
+
+
+
+
+footer {
+    position: relative;
+    width: 100vw;
+    height: 15vh;
+    padding: 10vw;
+    background: linear-gradient( rgba(0, 0, 0, 0), black 50%);
+    color: white;
+    text-align: center;
+    font-size: 0.8vw;
+    font-weight: 100;
+    letter-spacing: 0.2vw;
+    word-spacing: 0.3vw;
 }
